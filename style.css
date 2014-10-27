@@ -1,0 +1,648 @@
+/*
+Theme Name: FossGrafis
+Theme URI: http://fossgrafis.com
+Description: Tema khusus FossGrafis
+Version: 0.0.1
+Author: FossGrafis
+Author URI: http://fossgrafis.com/
+Tags: portfolio, blog, clean, minimal, white, two-columns, fixed-width, custom-background, threaded-comments, translation-ready, custom-menus
+*/
+
+@font-face {
+	font-family: Ubuntu;
+	src: url('images/Ubuntu-R.ttf');
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family: "Ubuntu","UbuntuBeta","Droid Sans","Arial",sans-serif;
+}
+
+.outer {
+	position:relative;
+	z-index:1;
+	padding-bottom:15px;
+}
+.outerf {
+	border-top: solid 1px #ACACAC;
+	border-bottom: solid 1px #DDD;
+	box-shadow: 0px 0px 8px -2px #000;
+	position:relative;
+	z-index:1;
+}
+.outerf.head2 {
+	background-color: #f3f3f3;
+	z-index:2;
+}
+.outer.single {
+	background-color:#efefef;
+	border-top:solid 1px #ddd;
+	font-family: "Ubuntu","UbuntuBeta","Droid Sans","Arial",sans-serif;
+	box-shadow: 0px -10px 10px -10px #ccc;
+}
+.single {
+	overflow:auto;
+}
+.single h2 {
+	color: #444;
+margin: 0px;
+}
+.single .main {
+	width: 68%;
+	float: left;
+	background-color: #FFF;
+	border: solid 1px #CECECE;
+	padding: 2.5%;
+	border-radius: 2px;
+	margin-top: 12px;
+}
+.single .main .content a {
+	color: #B17201;
+	font-style: italic;
+}
+.single .main .content a:hover {
+	color:#06F;
+}
+.single .cat {
+	display: block;
+	padding: 10px 20px;
+	background-color: #999;
+	color: white;
+	font-size: large;
+	border-radius: 0px 0px 0px 10px;
+}
+.single .cat a {
+	color: inherit;
+text-decoration: none;
+}
+.single .meta {
+font-size: 12px;
+margin-bottom: 10px;
+font-style: italic;
+font-family: "Droid Serif", Georgia, Times, "Times New Roman", serif;
+color: #999;
+border-bottom: solid 1px #ddd;
+padding-bottom: 10px;
+}
+.single .meta a {
+	color: #666;
+}
+.single .content {
+	color: #444;
+	text-align: justify;
+}
+.single .content p {
+	font-size: smaller;
+line-height: 1.5;
+}
+
+.inner {
+	width: 1000px;
+	margin: 0px auto;
+	padding: 10px;
+	position: relative;
+}
+header {
+	
+	height:130px;
+}
+header h1, header h2{
+	display:none;
+}
+header .logo {
+	width:1000px;
+	position: fixed;
+}
+.sharehead {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.menuutama {
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: -50px;
+}
+.menuutama .nav-menu {
+	display:table;
+	padding:5px 5px 0px 5px;
+	margin:5px 5px 0px 5px;
+	background-color: #FFA500;
+	border-radius: 7px 7px 0px 0px;
+	list-style:none;
+	box-shadow: 0px -3px 20px -8px #000;
+}
+.menuutama .nav-menu li {
+	float:left;
+	position:relative;
+}
+.menuutama .nav-menu li a {
+	font-family: "Ubuntu","UbuntuBeta","Droid Sans","Arial",sans-serif;
+	text-decoration:none;
+	color:#fff;
+	padding:10px;
+	display:block;
+}
+.menuutama .nav-menu li:hover a {
+	color:#5C584B;
+}
+.menuutama .nav-menu .sub-menu {
+	display:none;
+	padding-top: 5px;
+	position:absolute;
+	z-index: 1000;
+	width: 140px;
+	padding-left:0px;
+	right:0px;
+	color:#fff;
+}
+.menuutama .nav-menu .sub-menu li {
+	background-color: #FFA500;
+	width:100%;
+	text-align:left;
+	display: block;
+}
+.menuutama .nav-menu .sub-menu li:hover {
+	background-color:#AA4400;
+}
+.menuutama .nav-menu .sub-menu li:hover a {
+	color:#fff;
+}
+.menuutama .nav-menu li:hover .sub-menu {
+	display:block;
+}
+.outerheader {
+	padding:0px;
+	background-color:#ddd;
+}
+.bottomline {
+	width: 100%;
+	height: 2px;
+	background-color: #FFA500;
+	left: 0px;
+	box-shadow: 0px 1px 9px 0px #000;
+}
+
+.slider {
+	position:relative;
+}
+.slider a.imga {
+	height: 330px;
+	overflow: hidden;
+}
+.slider a.imga img {
+	width:100%;
+}
+.outermain {
+	overflow:auto;
+	background-color:#f7f8f9;
+}
+.mainbar {
+	width:75%;
+	float:left;
+}
+.mainbar .dafpost {
+	background-color: #FFF;
+	border: solid 1px #CECECE;
+	padding: 20px;
+	margin-right: 20px;
+	border-radius: 2px;
+}
+.mainbar .dafpost h3 {
+	font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+font-weight: normal;
+margin: 0pc;
+margin-bottom: 10px;
+border-bottom: solid 1px #DDD;
+color: #BD8107;
+}
+.mainbar .dafpost .content {
+	display: block;
+	list-style: none;
+	padding: 0px;
+	overflow:auto;
+}
+.mainbar .dafpost .content .cat {
+	position: absolute;
+	background-color: rgba(217, 97, 0, 0.9);
+	padding: 5px 10px;
+	color: #fff;
+}
+.mainbar .dafpost .content .cat a:hover {
+	color:#00FF7A;
+}
+.mainbar .dafpost .content .list {
+	font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+	float:left;
+	display:block;
+	width:48%;
+	height: 350px;
+	overflow:hidden;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.mainbar .dafpost .content .list .img {
+	height:180px;
+	overflow:hidden;
+}
+.mainbar .dafpost .content .list .img img {
+	width:100%;
+}
+.mainbar .dafpost .content .list a {
+	color:inherit;
+	text-decoration:none;
+}
+.mainbar .dafpost .content .list h4 {
+	font-weight:normal;
+	margin:0px;
+	color:#333;
+	text-decoration:none;
+	font-size:20px;
+	margin:5px 0px;
+}
+.mainbar .dafpost .content .list .excerpt {
+	line-height: 1.7;
+color: #444;
+font-size: 14px;
+}
+.mainbar .dafpost .content .list:nth-child(even) {
+	margin-left:2%;
+}
+.mainbar .dafpost .content .list:nth-child(odd) {
+	margin-right:2%;
+}
+.nivoSlider {
+	height:350px;
+	font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+}
+.nivo-caption {
+	padding:10px 20px;
+}
+.nivo-controlNav {
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
+	z-index:10;
+}
+.nivo-controlNav a {
+	display: block;
+	font-size: 0px;
+	padding: 10px;
+	margin-right: 5px;
+	background-color: #D96100;
+	float: left;
+	border-radius: 10px;
+}
+.nivo-controlNav a.active {
+	background-color: #10A6FA;
+}
+.sidebar {
+	width:25%;
+	float:right;
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	margin-top:15px;
+}
+.widget.thumbnail img {
+	width:100%;
+}
+.widget {
+	display:block;
+	width: 100%;
+	float: left;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: solid 1px #DDD;
+}
+.textwidget {
+	color: #787878;
+	font-size: 13px;
+}
+.widget h3 {
+	font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+	color: #964402;
+	font-weight: normal;
+	font-size: large;
+	margin-bottom: 8px;
+	border-bottom: solid 1px #999;
+}
+
+.widget .content {
+	
+}
+.widget ul {
+	list-style: none;
+padding-left: 0px;
+color: #666;
+font-size: 14px;
+}
+.widget ul li {
+	line-height: 1.3;
+margin: 5px 0px;
+}
+.widget ul li a {
+	color: #6B4412;
+text-decoration: none;
+font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+}
+.widget ul li a:hover {
+	color:#09F;
+}
+.widget.activity {
+	overflow: hidden;
+}
+.widget.activity .content a {
+	display: block;
+	float: left;
+	width: 100%;
+	color:inherit;
+	text-decoration:none;
+}
+.widget.activity .content a .img {
+	height: 120px;
+	overflow: hidden;
+	width: 100%;
+}
+.widget.activity .content a .img img {
+	width: 100%;
+	min-height: 100%;
+}
+.widget.activity .content a h4 {
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 10px;
+	color: #FFF;
+	background-color: #D96100;
+	text-decoration: none;
+	font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+	font-weight: normal;
+}
+.pagination {
+	display: table;
+margin: 0px auto;
+font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+}
+.pagination .page-numbers {
+	display: block;
+float: left;
+padding: 5px 10px;
+background-color: #D96100;
+margin-right: 5px;
+font-size: small;
+border-radius: 20px;
+color:white;
+	text-decoration:none;
+}
+.pagination .page-numbers.next, .pagination .page-numbers.prev {
+	background-color: #753E11;
+}
+.pagination .page-numbers:hover {
+	background-color:#596F96;
+}
+.pagination .page-numbers.current {
+	background-color:#10A6FA;
+}
+
+.outerfooter {
+	background-color: #E6E6E6;
+	overflow: auto;
+}
+.bodyfooter {
+	font-family: Ubuntu, UbuntuBeta, 'Droid Sans', Arial, sans-serif;
+	padding:0px;
+	margin-top: 10px;
+	border-top: solid 1px #DDD;
+	line-height: 1.5;
+}
+
+.bodyfooter .widgets {
+	overflow:auto;
+	display:block;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+.bodyfooter .widget {
+	display:block;
+	float:left;
+	width:20%;
+	margin: 0px 1.25%;
+	padding: 0px 1.25%;
+	border:0px;
+	color:#666;
+}
+.bodyfooter .widget h3 {
+	color: #666;
+}
+.bodyfooter .widget ul {
+	padding-left:0px;
+	
+}
+.bodyfooter .widget ul li {
+	list-style: none;
+margin: 8px 0px;
+font-size: small;
+line-height: 1.3;
+}
+.bodyfooter .widget ul li a {
+	color:#666;
+	text-decoration: underline;
+}
+.bodyfooter .widget ul li a:hover {
+	color:#0af;
+}
+.bodyfooter .widget ul li .meta {
+	display: block;
+	font-size: smaller;
+}
+.button {
+	padding: 7px 15px 9px 15px;
+background-color: #0070FF;
+color: #FFF;
+text-decoration: none;
+background-image: linear-gradient(bottom, rgb(0,111,255) 100%, rgb(0,44,97) 0%);
+background-image: -o-linear-gradient(bottom, rgb(0,111,255) 100%, rgb(0,44,97) 0%);
+background-image: -moz-linear-gradient(bottom, rgb(0,111,255) 100%, rgb(0,44,97) 0%);
+background-image: -webkit-linear-gradient(bottom, #006FFF 100%, #002C61 0%);
+background-image: -ms-linear-gradient(bottom, rgb(0,111,255) 100%, rgb(0,44,97) 0%);
+background-image: -webkit-gradient( linear, left bottom, left top, color-stop(1, #006FFF), color-stop(0, #002C61) );
+border-radius: 4px;
+}
+.button:hover {
+	background-image: linear-gradient(bottom, rgb(75,150,242) 100%, rgb(0,78,173) 0%);
+background-image: -o-linear-gradient(bottom, rgb(75,150,242) 100%, rgb(0,78,173) 0%);
+background-image: -moz-linear-gradient(bottom, rgb(75,150,242) 100%, rgb(0,78,173) 0%);
+background-image: -webkit-linear-gradient(bottom, rgb(75,150,242) 100%, rgb(0,78,173) 0%);
+background-image: -ms-linear-gradient(bottom, rgb(75,150,242) 100%, rgb(0,78,173) 0%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(1, rgb(75,150,242)),
+	color-stop(0, rgb(0,78,173))
+);
+}
+.twitterLink a {
+	color: #111;
+	text-decoration: none;
+	font-style: italic;
+	font-family: serif;
+}
+
+.outer.footer {
+	background-color: #ddd;
+	border-top: solid 1px #ccc;
+	overflow:auto;
+	padding-top:10px;
+}
+.outer.footer .left {
+	float: left;
+}
+.outer.footer .right {
+	float: right;
+	color: #999;
+	font-size: 14px
+}
+small a {
+	color: #2E5083;
+	text-decoration: none;
+}
+.authorlist {
+}
+.authorlist .content {
+	padding: 0px;
+}
+.authorlist .content li {
+	list-style: none;
+float: left;
+display: block;
+margin: 5px;
+}
+.tutdetail .wrap {
+	padding: 10px;
+background: url("http://dl.dropbox.com/u/3071810/tut_detail_bg.jpg") no-repeat scroll 0px 0px #F3F2F2;
+background-position-x: right;
+background-size: cover;
+}
+.tutdetail .content {
+	list-style:none;
+	padding:0px;
+}
+.tutdetail h3 {
+	margin-bottom:0px;
+}
+
+#comments {
+}
+#comments #commentslist {
+}
+#comments .comment {
+}
+#comments .comment h5 {
+}
+#comments .comment .date {
+}
+#comments .comment p {
+}
+#comments .comment .comment-reply-link {
+}
+.headsingle {
+	box-shadow: 0px -10px 10px -10px #999;
+	border-bottom: 0px;
+}
+
+.searchform {	
+
+}
+.searchform label {
+	display: none;
+}
+.searchform input[type=text] {
+	padding: 5px 7px;
+border: solid 1px #ccc;
+outline: none;
+width: 178px;
+}
+.searchform input[type=submit] {
+	padding: 5px 7px;
+color: #5E5E5E;
+background-color: #E6E6E6;
+border: solid 1px #ccc;
+margin-left: -7px;
+border-left: none;
+}
+
+.searchform input[type=submit]:hover {
+	background-color:#0af;
+	cursor:pointer;
+}
+.authorinfo {
+}
+.authorinfo .content {
+	overflow:auto;
+}
+.authorinfo .content .userphoto {
+	float:left;
+}
+.authorinfo .content .bio {
+	width: 140px;
+float: right;
+}
+.authorinfo .content .bio .name {
+	text-align: left;
+font-size: medium;
+font-weight: bold;
+}
+.authorinfo .content .bio .numpost {
+	font-size: 12px;
+border-bottom: solid 1px #999;
+}
+.authorinfo .content .bio .sosmed {
+	width: 80%;
+}
+.authorinfo .content .description {
+	width: 100%;
+float: left;
+font-size: small;
+padding-bottom: 15px;
+color: #666;
+text-align:left;
+line-height:1.5;
+}
+.authorinfo .content a {
+	text-decoration:none;
+	color:inherit;
+}
+.authorinfo .content a:hover {
+	color:#0af;
+}
+.mainbar.searchlist .dafpost .content .list {
+	width: 100%;
+	display:block;
+	float:left;
+	height: 180px;
+	border-bottom: solid 1px #DDD;
+	margin-bottom:15px;
+}
+.mainbar.searchlist .dafpost .content .list .img {
+	width:40%;
+	height: 180px;
+	overflow: hidden;
+	float:left;
+}
+.mainbar.searchlist .dafpost .content .list:nth-child(odd), .mainbar.searchlist .dafpost .content .list:nth-child(even) {
+	margin-left:0px;
+	margin-right:0px;
+}
+.mainbar.searchlist .dafpost .content .list .searchd {
+	width: 58%;
+float: right;
+}
+.mainbar.searchlist .dafpost .content .list .meta {
+	font-size: small;
+color: #999;
+}
